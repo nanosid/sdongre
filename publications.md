@@ -4,7 +4,7 @@ permalink: /publications/
 description: "Journal papers, conference papers, workshops, and under-review manuscripts."
 ---
 
-<p class="lead">IEEE-style citations with placeholders for PDF/DOI links. Update entries by editing the Markdown files in <code>_publications/</code>.</p>
+<!-- <p class="lead">IEEE-style citations with placeholders for PDF/DOI links. Update entries by editing the Markdown files in <code>_publications/</code>.</p> -->
 
 {% assign pubs = site.publications | sort: 'year' | reverse %}
 

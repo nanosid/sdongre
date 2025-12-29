@@ -4,7 +4,7 @@ permalink: /news/
 description: "Updates on publications, talks, grants, and milestones."
 ---
 
-<p class="lead">Reverse-chronological updates. Add a new Markdown file to <code>_posts/</code> to publish an item.</p>
+<!-- <p class="lead">Reverse-chronological updates. Add a new Markdown file to <code>_posts/</code> to publish an item.</p> -->
 
 {% for post in site.posts %}
   <article class="card" style="margin: 14px 0;">
@@ -16,6 +16,6 @@ description: "Updates on publications, talks, grants, and milestones."
 
 <hr/>
 
-<div class="notice">
+<!-- <div class="notice">
   <strong>Template:</strong> create <code>_posts/YYYY-MM-DD-title.md</code> with optional fields like <code>venue</code> and <code>acceptance_rate</code>.
-</div>
+</div> -->
