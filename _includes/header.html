@@ -39,7 +39,6 @@
 <header class="site-header">
   <div class="container header-inner">
 
-    <!-- Top row: brand left, social icons right -->
     <div class="header-top">
       <div class="brand">
         <a class="brand__name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
@@ -62,14 +61,12 @@
       </div>
     </div>
 
-    <!-- Second row: nav links + CV -->
     <nav class="nav header-nav" aria-label="Primary">
       {% for item in site.nav %}
-        <a class="nav__link {% if page.url == item.url %}is-active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        <a class="nav__link{% if page.url == item.url %} is-active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
       {% endfor %}
       <a class="nav__button" href="{{ site.cv_url | relative_url }}" target="_blank" rel="noopener">Download CV</a>
     </nav>
 
   </div>
 </header>
-
