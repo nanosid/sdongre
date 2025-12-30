@@ -1,16 +1,11 @@
 <div class="pub">
-  <div class="pub__cite">{{ include.citation }}</div>
-  <div class="pub__links">
-<!--     {% if include.pdf and include.pdf != "" %}
-      <a class="chip" href="{{ include.pdf }}" target="_blank" rel="noopener">PDF</a>
-    {% else %}
-      <span class="chip is-disabled">PDF</span>
-    {% endif %} -->
-
+  <div class="pub__cite">
+    {{ include.citation }}
+    {% if include.pdf and include.pdf != "" %}
+      <a class="pub__inline" href="{{ include.pdf }}" target="_blank" rel="noopener">[PDF]</a>
+    {% endif %}
     {% if include.doi and include.doi != "" %}
-      <a class="chip" href="https://doi.org/{{ include.doi }}" target="_blank" rel="noopener">DOI</a>
-    {% else %}
-      <span class="chip is-disabled">DOI</span>
+      <a class="pub__inline" href="https://doi.org/{{ include.doi }}" target="_blank" rel="noopener">[DOI]</a>
     {% endif %}
   </div>
 </div>

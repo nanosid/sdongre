@@ -120,6 +120,7 @@ a:hover {
   padding: 8px 12px;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.04);
+  justify-content: flex-end;
 }
 
 .nav__button:hover {
@@ -287,6 +288,18 @@ main {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+/* Inline publication links (PDF/DOI) */
+.pub__inline{
+  margin-left: 8px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/* Disabled placeholders (optional) */
+.pub__inline--disabled{
+  color: #9aa3b2;
 }
 
 .chip {
